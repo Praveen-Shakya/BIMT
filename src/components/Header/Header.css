@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header{
+  position: fixed;
+  top: 2.2rem;
+  left: 0;
+  margin-bottom: 80px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  box-shadow: 0 4px 2px -3px gray;
+  /* background-color: white; */
+background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 0 20px;
+  transition: 0.3s;
+  z-index: 1000;
+  border-bottom: 1.5px solid black;
+}
+
+.logo{
+  width: 25%;
+}
+
+/* .logo .header-logo{
+  padding-top: auto 0;
+  object-fit: cover;
+  height: 60%;
+  width: 70%;
+} */
+
+.header-logo{
+  /* object-fit: cover; */
+  width: 70%;
+  height: 70px;
+}
+
+.links{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.links a{
+  text-decoration: none;
+  color: #063564;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  /* text-shadow: 0 0 2px gray; */
+}
+.links a i{
+  padding-right: 5px;
+}
+#apply-btn{
+  padding: 9px 15px;
+  background-color: #931616;
+  color: white;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+#apply-btn:hover{
+  background-color: #063564;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* .hamburger span {
+  width: 25px;
+  height: 3px;
+  background: black;
+  transition: 0.3s;
+  position: absolute;
+  right: 30px; 
+  top: 50%;
+  transform: translateY(-50%);
+} */
+
+.burgerImg{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 3rem;
+  top: 1.5rem;
+  transition: 0.3s;
+
+}
+@media screen and (max-width:1200px){
+  #apply-btn{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1020px){
+  .links a{
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:905px){
+  .links a{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .header{
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #063564;
+    width: 30%;
+    height:300vh ;
+    text-align: center;
+    padding: 20px 0px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+  .links a{
+    color: white;
+    font-weight: bold;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width:600px){
+  .header{
+    top: 1.8rem;
+  }
+  .logo{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .header{
+    top: 0rem;
+    height: 70px;
+  }
+}
+
