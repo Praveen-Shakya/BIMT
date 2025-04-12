@@ -115,3 +115,19 @@ select {
     background-color: #063564;
 }
 
+@media screen and (max-width:700px){
+    .about{
+        flex-direction: column;
+    }
+    .about_us{
+        width: 100%;
+        text-align: center;
+    }
+    .inquery_form{
+        width: 100%;
+        align-items: center;
+    }
+    .form_class{
+        width: 80%;
+    }
+}

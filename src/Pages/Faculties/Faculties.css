@@ -1,0 +1,204 @@
+.hero-section {
+    position: relative;
+    margin-top: 7rem;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-section {
+      height: 300px;
+    }
+  }
+  
+  .hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(17, 24, 39, 0.7);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.07rem;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #ff0000, #d0c8d5, #c6b7d3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 3rem;
+    }
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-subtitle {
+      font-size: 1.25rem;
+    }
+  }
+  
+  .stats-container {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .stat-box {
+    background-color: rgba(21, 128, 61, 0.7);
+    padding: .4rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 10rem;
+  }
+  
+  @media (min-width: 768px) {
+    .stat-box {
+      width: 12rem;
+    }
+  }
+  
+  .stat-icon {
+    font-size: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  @media (min-width: 640px) {
+    .stat-number {
+      font-size: 1.25rem;
+    }
+  }
+  
+  .stat-label {
+    font-size: 0.875rem;
+  }
+  
+  .faculty-section{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+  .faculty-heading{
+    /* margin-top: 2rem;
+    color: red;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center; */
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.07rem;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #ff0000, #6a00a8, #3d0071);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  /* Faculty Grid */
+  .faculty-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 2.5rem 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .faculty-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      padding: 2.5rem 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .faculty-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      padding: 2.5rem 3rem;
+    }
+  }
+  
+  /* Faculty Card */
+  .faculty-card {
+    border: 2px solid #ccc;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: rgb(244, 236, 236);
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    padding: 2rem;
+    
+  }
+
+  
+  
+  .faculty-card img {
+    width: 90%;
+    height: 14rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 2px solid gray;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .faculty-card img:hover{
+    transform: scale(1.05);
+  }
+  
+  .faculty-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #aa1515;
+    /* padding-top: 0.75rem; */
+    cursor:default;
+    margin-bottom: 10px;
+  }
+  
+  .faculty-title, .faculty-desc{
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }

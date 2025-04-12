@@ -10,7 +10,7 @@ const Contact = () => {
     <div className='contact-container'>
       <Navbar />
       <Header />
-      <div className="contact-section">
+      <div className="contact-section-top">
       <div className="overlay">
         <div className="contact-box">
           <h1>Stay Connected with BIMT Institute</h1>
@@ -24,7 +24,7 @@ const Contact = () => {
               Head Office – <span>Badaun</span>
             </h2>
             <p>
-              {/* <FaMapMarkerAlt className="icon" /> */}
+            <i className="fas fa-map-marker-alt icon"></i>
               Indra Chowk, Badaun– Bareilly Road <br />
               Kadeer Market 1st floor Near Indra Chowk, Badaun, UP 243601
             </p>
