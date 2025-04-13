@@ -228,7 +228,7 @@ const About = () => {
         <div className="quality-policy">
           <h2 className="quality-title">Quality Policy</h2>
           <p className="quality-desc">
-            At Future University, we are committed to delivering exceptional
+            At Badaun Institute, we are committed to delivering exceptional
             educational experiences and advancing research and innovation with
             the highest standards of quality. Our quality policy is centered on:
           </p>

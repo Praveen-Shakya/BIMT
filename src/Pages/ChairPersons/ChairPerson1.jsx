@@ -22,8 +22,9 @@ const ChairPerson1 = () => {
           {/* Content */}
           <div className="hero-cont">
             <h1 className="hero-tit">
-             Meet Our Chairperson (Shri Mukesh Rastogi)
+             Meet Our Chairperson:
             </h1>
+            <p className="hero-name">Shri Mukesh Rastogi</p>
           </div>
         </div>
       </div>

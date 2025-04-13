@@ -89,7 +89,7 @@ const Home = () => {
     const [teacherCount, setTeacherCount] = useState(1); // Initial value 1
     const [placementCount, setPlacementCount] = useState(1);// Initial value 100
     const [industryCount, setIndustryCount] = useState(1);// Initial value 100
-    const duration = 10; // 2 seconds
+    const duration = 10; // 1 seconds
     const endValue = 5000;
     const steps = 60; // Number of updates in 2 seconds
 

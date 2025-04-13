@@ -5,6 +5,7 @@
     color: white;
     padding: 20px;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
   
   .footer-section1 {
@@ -139,6 +140,10 @@
   padding-top: 10px;
   border-top: 1px solid #333;
   font-size: 14px;
+}
+.developer-name{
+  font-size: 16px;
+  color: rgb(249, 124, 124);
 }
 
 /* Responsive Design */

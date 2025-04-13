@@ -60,9 +60,9 @@ const Header = () => {
                   <div className="dropdown-section">
                     <h4>Chairperson</h4>
                     <ul>
-                      <Link className="link active" to='/chairperson1'>Smt. Sudesh Ahuja</Link><br />
+                      <Link className="link active" to='#'>Smt. Sudesh Ahuja</Link><br />
                       <Link className="link active" to='#'>Shri Brij Bhusan Singhal</Link><br />
-                      <Link className="link active" to='#'>Shri Mukesh Rastogi</Link><br />
+                      <Link className="link active" to='/chairperson1'>Shri Mukesh Rastogi</Link><br />
                       <Link className="link active" to='#'>Shri Sushil Arora</Link><br />
                     </ul>
                   </div>

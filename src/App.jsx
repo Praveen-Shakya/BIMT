@@ -7,12 +7,14 @@ import Apply from './Pages/Apply/Apply';
 import Faculties from './Pages/Faculties/Faculties';
 import Chairperson1 from './Pages/ChairPersons/ChairPerson1';
 import Courses from './Pages/Courses/Courses';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
 
   return (
     <>
+    <ScrollToTop />
       <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About/>} />

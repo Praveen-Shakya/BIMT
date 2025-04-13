@@ -5,7 +5,7 @@
     height: 450px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     color: white;
   }
   
@@ -32,21 +32,28 @@
   .hero-cont {
     position: relative;
     z-index: 10;
-    text-align: center;
+    text-align: right;
     padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 15rem;
+    cursor: pointer;
   }
   
   .hero-tit {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 0.07rem;
     text-transform: capitalize;
-    background: linear-gradient(90deg, #ff0000, #d1f49c, #914dcd);
+    background: linear-gradient(90deg, #ff0000, #b098be, #ded7e4);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .hero-name{
+    font-size: 1.5rem;
+    font-weight: 700;
   }
   .chairperson-section {
     display: flex;
@@ -54,17 +61,24 @@
     align-items: center;
     /* gap: 4rem; */
     padding: 3rem 2rem;
+    padding-top: 100px;
+    padding-bottom: 100px;
     max-width: 1200px;
     margin: auto;
+  }
+
+  .chairperson-img{
+      padding-top: 50px;
   }
   
   .chairperson-img img {
     width: 220px;
     height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border: 4px solid #e0e0e0;
+    width: 50%;
+    border-radius: 20px;
+    object-fit: contain;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    /* border: 4px solid #e0e0e0; */
   }
   
   .chairperson-content {
@@ -73,6 +87,8 @@
     line-height: 1.6;
     color: #333;
     padding: 2rem 5rem;
+    background-color: #d9e6fc;
+    border-radius: 20px;
 }
 .chairperson-title{
     font-size: 2rem;
@@ -81,7 +97,7 @@
     margin-bottom: 1rem;
     font-weight: 700;
     /* color: #C40C11; Purple shade */
-    letter-spacing: 0.07rem;
+    letter-spacing: 0.01rem;
     text-transform: capitalize;
     background: linear-gradient(90deg, #ff0000, #6a00a8, #3d0071);
     -webkit-background-clip: text;
