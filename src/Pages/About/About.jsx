@@ -16,7 +16,7 @@ import Image4 from "../../assets/IMG_2592.jpg";
 import Image01 from "../../assets/IMG_2434.jpg";
 import Image02 from "../../assets/IMG_2563.jpg";
 import Image04 from "../../assets/IMG_2592.jpg";
-import Image5 from "../../assets/Whatsapp3.jpg";
+import Image5 from "../../assets/WhatsApp3.jpg";
 import Image6 from "../../assets/IMG_2620.jpg";
 import Image7 from "../../assets/IMG_2620.jpg";
 import Navbar from "../../components/Navbar/Navbar";
