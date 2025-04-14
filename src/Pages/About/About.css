@@ -23,6 +23,12 @@
     font-weight: 700;
     color: rgb(163, 31, 31);
   }
+
+  @media screen and (max-width:700px){
+    .about-container {
+      padding-top: 100px;
+    }
+  }
   
   /* Statistics */
   .statistics-section {
@@ -72,6 +78,17 @@
   .stat-label {
     font-size: 0.875rem;
   }
+
+@media screen and (max-width:700px){
+  .statistics-section {
+    gap: 1rem;
+    margin-bottom: 0rem;
+  }
+  
+  .stat-image img.stat-img {
+    height: 250px;
+  }
+}
   
   /* Overview Section */
   .overview-section {
@@ -159,6 +176,24 @@
     margin-bottom: 0.5rem;
     list-style: disc inside;
   }
+
+@media screen and (max-width:700px){
+  .overview-section{
+    margin-bottom: 1rem;
+  }
+  
+  .vision-mission-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vision-card,
+  .mission-card {
+    width: 80%;
+    padding: 2rem;
+  }
+}
   
   /* Ecosystem */
   .ecosystem-section {
@@ -204,6 +239,38 @@
     color: #4b5563;
   }
   
+@media screen and (max-width:700px){
+  .ecosystem-title {
+    padding-top: 1rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+  }
+  
+  .feature-card {
+    padding: 1rem;
+  }
+  
+  .feature-icon .icon {
+    font-size: 2rem;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-description {
+    font-size: 0.9rem;
+    color: #4b5563;
+  }
+  
+}
   /* Quality Policy */
   .quality-policy {
     margin-bottom: 3rem;

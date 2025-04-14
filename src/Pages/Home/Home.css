@@ -161,6 +161,7 @@
         font-size: 1.875rem;
         line-height: 2.8rem;
         font-weight: 700;
+        text-align: center;
         /* color: #C40C11; */
         text-transform: capitalize;
         background: linear-gradient(90deg, #ff0000, #6a00a8, #3d0071);
@@ -176,14 +177,17 @@
         color: #474444;
         line-height: 2.8rem;
         font-weight: 300;
+        text-align: center;
     }
     
     .aboutPara{
         font-size: 1.125rem;
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
         line-height: 1.7rem;
         color: #525863;
         word-spacing: 0.2rem;
+        text-align: justify;
     }
     
     .aboutPara span{
@@ -287,6 +291,7 @@
         height: auto;
         border-radius: 20px;
         transition: transform 0.2s ease-in-out;
+        border: 1px solid black;
     }
     
     .image img:hover{
@@ -429,8 +434,8 @@
             padding: 10px;
         }
         .image img{
-            width: 80%;
-            height: 80vh;
+            width: 70%;
+            height: 60vh;
         }
         .mainHeading {
           font-size: 1.5rem;

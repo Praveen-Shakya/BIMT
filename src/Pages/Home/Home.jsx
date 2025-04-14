@@ -251,9 +251,9 @@ const Home = () => {
             Education"</i>
           </p>
           <p className="aboutPara">
-            <span className="bold">BIMT INSTITUTE </span> was established in 2009, with the <span className="bold"> intention
-              to provide the right guidance </span> to students who are career minded and ambitious.
-             <span className="bold"> right from its inception, BIMT had an obsession with quality which </span> till today is the  <span className="bold">cutting-edge technology,
+            <span className="bold">BIMT INSTITUTE </span> was established in 2009, with the intention
+              to provide the right guidance to students who are career minded and ambitious.
+              right from its inception, BIMT had an obsession with quality which till today is the  <span className="bold">cutting-edge technology,
              hallmark of the institute. </span> The interest of students is given top priority and counselling is taken up to help students identity their interests.
           </p>
           <button className="readBtn">Read More &rarr;</button>
