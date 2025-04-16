@@ -71,15 +71,15 @@ const Header = () => {
                     <h4>Directors</h4>
                     <ul>
                       <Link className="link active" to='/director1'>Akshaj Rastogi</Link> <br />
-                      <Link className="link active" to='#'>Ashish Singhal</Link> <br />
-                      <Link className="link active" to='#'>Vikas Ahuja</Link> <br />
+                      <Link className="link active" to='/director2'>Ashish Singhal</Link> <br />
+                      <Link className="link active" to='/director3'>Vikas Ahuja</Link> <br />
                     </ul>
                   </div>
 
                   <div className="dropdown-section">
                     <h4>Controller</h4>
                     <ul>
-                      <Link className="link active" to='#'>Prof. K.P. Singh</Link>
+                      <Link className="link active" to='/controller'>Prof. K.P. Singh</Link>
                     </ul>
                   </div>
                 </div>

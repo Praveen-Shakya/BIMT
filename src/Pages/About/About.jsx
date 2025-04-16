@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import './About.css'  
+import "./About.css";
 import {
   FaRobot,
   FaBrain,
@@ -22,16 +22,9 @@ import Image7 from "../../assets/IMG_2620.jpg";
 import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import './About.css';
+import "./About.css";
 
-const images = [
-  Image01,
-  Image02,
-  Image04,
-  Image5,
-  Image6,
-  Image7,
-];
+const images = [Image01, Image02, Image04, Image5, Image6, Image7];
 
 const About = () => {
   const scrollRef = useRef(null);
@@ -50,6 +43,22 @@ const About = () => {
     const interval = setInterval(scroll, 10);
     return () => clearInterval(interval);
   }, [isPaused]);
+  // const scrollRef = useRef(null);
+  // const [isPaused, setIsPaused] = useState(false);
+
+  // useEffect(() => {
+  //   if (isPaused) return;
+  //   const scroll = () => {
+  //     if (scrollRef.current) {
+  //       scrollRef.current.scrollLeft += 1;
+  //       if (scrollRef.current.scrollLeft >= scrollRef.current.scrollWidth / 2) {
+  //         scrollRef.current.scrollLeft = 0;
+  //       }
+  //     }
+  //   };
+  //   const interval = setInterval(scroll, 10);
+  //   return () => clearInterval(interval);
+  // }, [isPaused]);
 
   const features = [
     {
@@ -90,11 +99,11 @@ const About = () => {
       description:
         "Providing a transformative and rigorous educational experience that empowers students with practical knowledge, ethical leadership skills, and a commitment to integrity.",
     },
-    {
-      title: "Innovative Research",
-      description:
-        "Promoting cutting-edge research that drives sustainable development and addresses global challenges.",
-    },
+    // {
+    //   title: "Innovative Research",
+    //   description:
+    //     "Promoting cutting-edge research that drives sustainable development and addresses global challenges.",
+    // },
     {
       title: "Ethical Leadership",
       description:
@@ -180,13 +189,14 @@ const About = () => {
             <div className="vision-card">
               <h3 className="card-title">Vision Statement</h3>
               <div className="card-text">
-                To be a premier College of higher learning that advances
-                research, innovation, and ethical leadership, empowering
-                students to drive sustainable development and societal
-                well-being with integrity.
+                BIMT Provides student with quality educational experiences and
+                support services that lead to the successful completion of
+                degrees, transfer certificates and basic skills proficiency.
+                Through measurable learning out comes, ethical data driver
+                decisions and student achievement.
               </div>
             </div>
-            <div className="mission-card">
+            <div className="mission-card ">
               <h3 className="card-title">Mission Statement</h3>
               <ul className="mission-list">
                 <li>
@@ -214,10 +224,13 @@ const About = () => {
 
         <div className="ecosystem-section">
           <h2 className="ecosystem-title">Our AI-Powered Ecosystem</h2>
-          <div className="features-grid">
+          <div className="features-grid ">
             {features.map((feature, index) => (
-              <div key={index} className="feature-card">
-                <div className="feature-icon">{feature.icon}</div>
+              <div
+                key={index}
+                className="feature-card border hover:scale-105 hover:cursor-pointer duration-300 "
+              >
+                <div className="feature-icon ">{feature.icon}</div>
                 <h3 className="feature-title">{feature.title}</h3>
                 <p className="feature-description">{feature.description}</p>
               </div>
@@ -242,11 +255,11 @@ const About = () => {
           </div>
         </div>
 
-        <div className="campus-gallery">
-          <h2 className="gallery-title">Campus Life & Events</h2>
+        <div className="campus-gallery-container">
+          <h2 className="campus-gallery-title">Campus Life & Events</h2>
           <div
             ref={scrollRef}
-            className="gallery-scroll"
+            className="campus-gallery-scroll"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {[...images, ...images].map((src, index) => (
@@ -254,7 +267,7 @@ const About = () => {
                 key={index}
                 src={src}
                 alt={`Campus Life ${(index % images.length) + 1}`}
-                className="gallery-img"
+                className="campus-gallery-img"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
               />

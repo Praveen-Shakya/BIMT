@@ -20,20 +20,22 @@
     position: relative;
     top: 40px;
     display: flex;
-    background: black;
   }
   
   .sliderContainer {
     display: flex;
     width: 200%; 
-    animation: slideAnimation 8s ease-in-out infinite;
+    animation: slideAnimation 10s ease-in-out infinite;
+  }
+  .slider{
+    width: 100%;
   }
   
   .sliderImage {
     width: 100%;
     height: auto;
     max-height: 750px;
-    object-fit: cover;
+    /* object-fit: cover; */
     flex-shrink: 0;
   }
   
@@ -132,7 +134,8 @@
 
     .aboutSection{
         width: 100%;
-        background-color:  #F4FAF1;
+        /* background-color:  #F4FAF1; */
+        background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
         display: flex;
         height: auto;
         padding-top: 200px;

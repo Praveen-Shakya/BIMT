@@ -9,7 +9,7 @@ import Footer from "../../components/Footer/Footer";
 
 const blogs = [
   {
-    title: "Commerce & Management",
+    title: "Faculty of Commerce & Management",
     description: "Unleash creativity and critical thinking through diverse disciplines in literature, psychology, and media.",
     image: `${assets.program1}`,
   },
@@ -19,7 +19,7 @@ const blogs = [
     image: `${assets.program2}`,
   },
   {
-    title: "Engineering & AI Machine Learning",
+    title: "Faculty of Computer Science",
     description: "Explore the wonders of science with cutting-edge programs in physics, chemistry, and biotechnology.",
     image: `${assets.program3}`,
   },
@@ -52,7 +52,7 @@ const programsData = [
   },
   {
     id: 3,
-    title: "Enginnering Programmes",
+    title: "Education & Teaching Programmes",
     icon: "🏅",
     courses: ["Economics", "Engineering & Technology", "Sciences"],
   },
@@ -90,7 +90,7 @@ const Home = () => {
     const [placementCount, setPlacementCount] = useState(1);// Initial value 100
     const [industryCount, setIndustryCount] = useState(1);// Initial value 100
     const duration = 10; // 1 seconds
-    const endValue = 5000;
+    const endValue = 4000;
     const steps = 60; // Number of updates in 2 seconds
 
     useEffect(() => {
@@ -118,7 +118,7 @@ const Home = () => {
         }
 
         // Placement Record
-        if (placementCount < 910) {
+        if (placementCount < 210) {
             const placementInterval = setInterval(() => {
               setPlacementCount((prev) => prev + 10);
             }, 10);
@@ -127,7 +127,7 @@ const Home = () => {
           }
 
         // Industry Record
-        if (industryCount < 150) {
+        if (industryCount < 50) {
             const industryInterval = setInterval(() => {
               setIndustryCount((prev) => prev + 1);
             }, 10);
@@ -200,25 +200,8 @@ const Home = () => {
 
       <div className="imageSlider">
       <div className="slider">
-        {/* <button className="prev" onClick={goToPrevious}>
-          &#10094;
-        </button> */}
-
         <img src={images[currentIndex]} alt="Slider" className="sliderImage" />
-
-        {/* <button className="next" onClick={goToNext}>
-          &#10095;
-        </button> */}
       </div>
-      {/* <div className="sidebar">
-        <div className="icons">
-          <i className="fa-solid fa-phone-volume"></i>
-          <i className="fa-brands fa-whatsapp"></i>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-brands fa-facebook"></i>
-          <i className="fa-solid fa-location-dot"></i>
-        </div>
-      </div> */}
     </div>
       {/* <StudentCounter /> */}
       <div className='studentCounter'>
@@ -345,7 +328,7 @@ const Home = () => {
             <span className="icon">⭐</span> Sports Complex
           </div>
           <div className="facility-card">
-            <span className="icon">⭐</span> Student Housing
+            <span className="icon">⭐</span> Common classrooms
           </div>
         </div>
       </div>
