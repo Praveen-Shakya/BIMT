@@ -177,7 +177,7 @@
     height: 14rem;
     object-fit: cover;
     object-position: top;
-    border-radius: 50%;
+    border-radius: 20px;
     border: 2px solid gray;
     cursor: pointer;
     margin-bottom: 20px;

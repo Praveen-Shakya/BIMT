@@ -1,0 +1,151 @@
+.admission-container {
+    display: flex;
+    height: auto;
+    font-family: sans-serif;
+    background: url('../../assets/ApplyHome.png') no-repeat center center/cover;
+    margin-top: 110px;
+  }
+  
+  .admission-left {
+    flex: 1;
+    position: relative;
+  }
+  
+  .admission-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .admission-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .admission-overlay p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .admission-right {
+    flex: 1;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .form-box {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-box h2 {
+    color: rgb(183, 49, 49);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-box input,
+  .form-box select {
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form-row > * {
+    flex: 1;
+  }
+  
+  .captcha-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 0.6rem;
+    flex: 1;
+  }
+  
+  .captcha {
+    font-family: 'monospace';
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .captcha-box button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  
+  .submit-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgb(163, 49, 49);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .submit-btn:hover {
+    background: #003380;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 1rem;
+    color: #004aad;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  
+  @media (max-width: 768px) {
+    .admission-container {
+      flex-direction: column;
+    }
+  
+    .admission-left {
+      height: 250px;
+    }
+  
+    .admission-overlay {
+      padding: 1.5rem;
+      text-align: center;
+    }
+  
+    .admission-right {
+      padding: 1rem;
+    }
+  
+    .form-box {
+      padding: 1.5rem;
+    }
+  }
+  

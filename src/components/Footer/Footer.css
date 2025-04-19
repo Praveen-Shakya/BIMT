@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #063564;
     color: white;
     padding: 20px;
     flex-wrap: wrap;
@@ -33,6 +33,44 @@
     margin-bottom: 5px;
     line-height: 1.5rem;
   }
+
+  .footer-links1 {
+    color: white;
+    font-size: 14px;
+    word-spacing: 0.1rem;
+    margin-bottom: 3px;
+    line-height: 1.5rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    background-image: linear-gradient(to right, #000, rgb(186, 42, 42));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-size 0.8s ease;
+  }
+  .footer-links1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(186, 42, 42);
+    transition: width 0.8s ease;
+  }
+
+  .footer-links1:hover{
+    color: rgb(186, 42, 42);
+    padding-bottom: 3px;
+    /* border-bottom: 2px solid rgb(103, 39, 39); */
+    background-size: 100% 100%;
+  }
+  .footer-links1:hover::after {
+    width: 100%;
+  }
   
   @media screen and (max-width: 1024px) {
     .footer {
@@ -62,7 +100,7 @@
 
   /* Footer Container */
 .footer-container {
-  background-color: #000;
+  background-color: #063564;
   color: white;
   padding: 40px 20px;
   font-family: Arial, sans-serif;

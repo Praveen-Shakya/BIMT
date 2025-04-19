@@ -246,4 +246,48 @@
       width: 80%;
     }
   }
-  
+
+/* Program List Css */
+ 
+.program-container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.program-list-container {
+  padding-top: 50px;
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  border-bottom: 2px dashed rgb(143, 104, 104);
+  gap: 1rem;
+}
+
+
+.program-list-item-button{
+  color: rgb(197, 52, 52);
+  padding: 12px 25px;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-bottom: 5px;
+}
+.program-list-item-button:hover{
+  background-color: #b07676;
+  color: white;
+}
+
+.program-list-item-links{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.program-list-item-links:hover{
+  color: white;
+}

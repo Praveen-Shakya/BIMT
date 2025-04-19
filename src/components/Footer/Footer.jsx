@@ -11,46 +11,40 @@ const Footer = () => {
         <div className="footer-section1">
           <h3>Act, Statutes, and Ordinances</h3>
           <ul>
-            <li>Anti Ragging Committee</li>
-            <li>ICC</li>
-            <li>HR Manual</li>
-            <li>Proctorial Board</li>
-            <li>Annual Reports</li>
+            <Link className="footer-links1" to='#'>Anti Ragging Committee</Link><br />
+            <Link className="footer-links1" to='#'>Rules & Regulations</Link><br />
+            <Link className="footer-links1" to='#'>Proctorial Board</Link><br />
           </ul>
         </div>
         <div className="footer-section1">
           <h3>Programs</h3>
           <ul>
-            <li>Doctoral Programs</li>
-            <li>Post Graduate Programs</li>
-            <li>Under Graduate Programs</li>
+            {/* <li>Doctoral Programs</li> */}
+            <Link className="footer-links1" to='/courses' state={{ section: "PG" }}>Post Graduate Programs</Link><br />
+            <Link className="footer-links1" to='/courses' state={{ section: "UG" }}>Under Graduate Programs</Link>
           </ul>
         </div>
         <div className="footer-section1">
           <h3>Admission Process</h3>
           <ul>
-            <li>Fee Structure</li>
-            <li>Scholarships</li>
-            <li>Hostel Fee</li>
-            <li>Transport Fee</li>
-            <li>Application Form</li>
-            <li>Education Loan</li>
-            <li>Refund Policy</li>
-            <li>Privacy Policy</li>
-            <li>Payment Policies</li>
-            <li>Terms & Conditions</li>
+            <Link className="footer-links1" to='#'>Fee Structure</Link><br />
+            <Link className="footer-links1" to='#'>Scholarships</Link><br />
+            <Link className="footer-links1" to='#'>Transport Fee</Link><br />
+            <Link className="footer-links1" to='#'>Application Form</Link><br />
+            <Link className="footer-links1" to='#'>Payment Policies</Link><br />
+            <Link className="footer-links1" to='#'>Terms & Conditions</Link><br />
           </ul>
         </div>
         <div className="footer-section1">
-          <h3>How We Teach</h3>
+          <h3>Why BIMT</h3>
           <ul>
-            <li>Live Projects</li>
-            <li>Industry Immersion</li>
-            <li>Interdisciplinary Minors</li>
-            <li>Curriculum Innovations</li>
-            <li>Assessment And Evaluation</li>
-            <li>Mentoring & Advising</li>
-            <li>Internal Quality Assurance Cell (IQAC)</li>
+            <Link className="footer-links1" to='/about'>About BIMT</Link><br />
+            <Link className="footer-links1" to='/faculties'>Faculty</Link><br />
+            <Link className="footer-links1" to='/alumni'>Alumni</Link><br />
+            <Link className="footer-links1" to='#'>Infrastructure</Link><br />
+            <Link className="footer-links1" to='#'>Testimonials</Link><br />
+            <Link className="footer-links1" to='#'>Academic Excellence</Link><br />
+            <Link className="footer-links1" to='#'>Strong Industry Coneection</Link><br />
           </ul>
         </div>
       </div>
@@ -67,14 +61,14 @@ const Footer = () => {
             <p className="footer-text">
               <strong>BIMT Institute</strong> <br />
               Badaun To Kakrala Road <br />
-              Near Mother Anthena School, Badaun <br />
+              Near Mandi Samiti, Badaun <br />
               Uttar Pradesh 243601 <br />
               <span>+91-9897777709, +91-9897777797</span> <br />
               <a
-                href="mailto:admissions@futureuniversity.in"
+                href="#"
                 className="admissionLink"
               >
-                admissions@bimtbadaun.in
+                bimtbadaun@gmail.com
               </a>
             </p>
           </div>
@@ -105,7 +99,7 @@ const Footer = () => {
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
-                href="https://www.youtube.com/@bimtlivenow1229"
+                href="https://www.youtube.com/@BIMTOFFICIAL"
                 target="blank"
                 className="footer-social-icon"
               >

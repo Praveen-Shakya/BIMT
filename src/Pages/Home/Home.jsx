@@ -52,7 +52,7 @@ const programsData = [
   },
   {
     id: 3,
-    title: "Education & Teaching Programmes",
+    title: "Education Programs",
     icon: "🏅",
     courses: ["Economics", "Engineering & Technology", "Sciences"],
   },
