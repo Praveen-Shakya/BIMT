@@ -6,12 +6,12 @@ const programs = [
   {
     title: "M.Sc. (H.Sc)",
     description:
-      "A two-year, full-time program affiliated with Dr. A. P. J. Abdul Kalam Technical University, Lucknow.",
+      "M.Sc(Home Science) is a 2 Years Post Graduate Programme which you can specialise in General Food and Nutrition and Human Development.",
   },
   {
     title: "M.Com",
     description:
-      "The MCA program provides advanced knowledge in software development, programming, data…",
+      "M.Com. is Master of Commerce, M.Com. is a 2 years Post Graduate Level course ideal for candidate. Who wish to make a career in Banking, Financial Services and Insurance (BFSI) as well as accounting and commerce sector.",
   },
   {
     title: "M.Sc (Zoology)",
@@ -31,12 +31,12 @@ const programs = [
   {
     title: "B.Ed",
     description:
-      "A two-year, full-time program affiliated with Dr. A. P. J. Abdul Kalam Technical University, Lucknow.",
+      "Bachelor of Education or B.Ed. is an undergraduate program of 2 years duration. The course specifically caters to the students who are interested in pursuing a career in teaching and related fields.",
   },
   {
     title: "D.EL.Ed",
     description:
-      "The MCA program provides advanced knowledge in software development, programming, data…",
+      "Diploma in Elementary Education(Approved by NCTE Delhi) Aim of program is to preparing teachers for elementary stage of Education to fulfil the basic learning needs of all children.  It is 2 years course approved by NCTE Delhi and Affiliated to SCERT Lucknow, Uttar Pradesh Government.",
   },
   {
     title: "BBA",

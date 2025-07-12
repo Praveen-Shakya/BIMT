@@ -21,7 +21,7 @@ const blogs = [
   {
     title: "Faculty of Computer Science",
     description: "Explore the wonders of science with cutting-edge programs in physics, chemistry, and biotechnology.",
-    image: `${assets.program3}`,
+    image: `${assets.program1}`,
   },
   {
     title:"Arts Related Science",

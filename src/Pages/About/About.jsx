@@ -9,22 +9,42 @@ import {
   FaChartLine,
 } from "react-icons/fa";
 import Building from "../../assets/building_2.jpg";
-import Image1 from "../../assets/IMG_2620.jpg";
-import Image2 from "../../assets/IMG_2434.jpg";
-import Image3 from "../../assets/IMG_2592.jpg";
-import Image4 from "../../assets/IMG_2592.jpg";
+import Image1 from "../../assets/about1.jpg";
+import Image2 from "../../assets/s12.jpg";
+import Image3 from "../../assets/about3.jpg";
+import Image4 from "../../assets/t3.jpg";
 import Image01 from "../../assets/IMG_2434.jpg";
 import Image02 from "../../assets/IMG_2563.jpg";
 import Image04 from "../../assets/IMG_2592.jpg";
-import Image5 from "../../assets/WhatsApp3.jpg";
-import Image6 from "../../assets/IMG_2620.jpg";
-import Image7 from "../../assets/IMG_2620.jpg";
+import Image5 from "../../assets/s1.jpg";
+import Image6 from "../../assets/t1.jpg";
+import Image7 from "../../assets/s2.jpg";
+import Image8 from "../../assets/t2.jpg";
+import Image9 from "../../assets/s3.jpg";
+import Image10 from "../../assets/t3.jpg";
+import Image11 from "../../assets/s4.jpg";
+// import Image12 from "../../assets/t4.jpg";
+import Image13 from "../../assets/s5.jpg";
+import Image15 from "../../assets/s9.jpg";
+import Image14 from "../../assets/s6.jpg";
+import Image16 from "../../assets/s7.jpg";
+import Image17 from "../../assets/s8.jpg";
+import Image18 from "../../assets/s10.jpg";
+import Image19 from "../../assets/s11.jpg";
+import Image20 from "../../assets/s12.jpg";
+import Image21 from "../../assets/s13.jpg";
+import Image22 from "../../assets/s14.jpg";
+import Image23 from "../../assets/s15.jpg";
+import Image24 from "../../assets/s16.jpg";
+import Image25 from "../../assets/s12.jpg";
+import Image26 from "../../assets/s9.jpg";
 import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import "./About.css";
 
-const images = [Image01, Image02, Image04, Image5, Image6, Image7];
+const images = [Image01, Image02, Image3,  Image04];
+const studentImages = [Image5,Image6, Image7, Image8, Image9, Image10, Image11, Image21, Image13, Image14, Image15, Image16, Image17, Image18, Image19, Image20, Image21, Image22, Image23, Image24, Image25, Image26];
 
 const About = () => {
   const scrollRef = useRef(null);
@@ -262,11 +282,11 @@ const About = () => {
             className="campus-gallery-scroll"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            {[...images, ...images].map((src, index) => (
+            {[...studentImages, ...images].map((src, index) => (
               <img
                 key={index}
                 src={src}
-                alt={`Campus Life ${(index % images.length) + 1}`}
+                alt={`Campus Life ${(index % studentImages.length) + 1}`}
                 className="campus-gallery-img"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
